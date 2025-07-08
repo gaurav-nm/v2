@@ -5,7 +5,7 @@ export default function HomeSection() {
   return (
     <section id="home" className="mb-16 flex flex-col items-center justify-center min-h-[60vh]">
       <motion.img
-        src="https://i.imgur.com/5cF6nOa.png"
+        src={process.env.PUBLIC_URL + "/188447565652573851.jpeg"}
         alt="Batman Avatar"
         className="w-32 h-32 rounded-full shadow-lg mb-6 border-4 border-zinc-200 dark:border-zinc-800 bg-white"
         initial={{ opacity: 0, y: -30 }}
