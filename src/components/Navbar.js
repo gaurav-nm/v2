@@ -8,12 +8,7 @@ const sections = [
   { id: "contact", label: "Contact" },
 ];
 
-const socials = [
-  { href: "https://x.com/dev_gauravm", label: "Twitter", icon: "🐦" },
-  { href: "https://www.instagram.com/gaurav.nm", label: "Instagram", icon: "📸" },
-  { href: "https://youtube.com/@ggauravnm", label: "YouTube", icon: "▶️" },
-  { href: "https://leetcode.com/u/gauravnm/", label: "LeetCode", icon: "💡" },
-];
+
 
 export default function Navbar({ darkMode, setDarkMode }) {
   return (
@@ -30,18 +25,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               {s.label}
             </a>
           ))}
-          {socials.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={s.label}
-              className="text-lg ml-1 hover:scale-110 transition-transform"
-            >
-              <span>{s.icon}</span>
-            </a>
-          ))}
+
           <button
             aria-label="Toggle dark mode"
             onClick={() => setDarkMode((d) => !d)}

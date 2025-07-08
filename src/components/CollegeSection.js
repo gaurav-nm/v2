@@ -21,12 +21,15 @@ export default function CollegeSection() {
         transition={{ duration: 0.7, delay: 0.2 }}
       >
         <p>College life is both a grind and a gift.<br/>
-        I wake up at 5 AM, take a metro + auto commute, and reach college by 9 AM.<br/>
         Classes, assignments, and labs take up the day.<br/>
         Despite the long hours, I keep pushing forward because I know where I’m headed.</p>
         <div className="mt-4">
           <div className="font-bold">IEC College of Engineering & Technology</div>
           <div>Branch: B.Tech in Computer Science Engineering</div>
+        </div>
+        <div className="mt-4">
+          <div className="font-bold">Indian Institute Of Technology Madras</div>
+          <div>Branch: Bachelor of Science (BS) Degree in Data Science and Applications  </div>
         </div>
       </motion.div>
     </section>
