@@ -27,7 +27,7 @@ function App() {
   return (
     <div className={`min-h-screen bg-gray-50 dark:bg-[#181a1b] transition-colors duration-300 font-sans`}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main className="max-w-3xl mx-auto px-4 pt-24 pb-8">
+      <main className="w-full max-w-3xl mx-auto px-2 sm:px-4 pt-24 pb-8">
         <HomeSection />
         <AboutSection />
         <CollegeSection />
