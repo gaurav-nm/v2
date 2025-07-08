@@ -7,7 +7,8 @@ export default function HomeSection() {
       <motion.img
         src={process.env.PUBLIC_URL + "/188447565652573851.jpeg"}
         alt="Batman Avatar"
-        className="w-32 h-32 rounded-full shadow-lg mb-6 border-4 border-zinc-200 dark:border-zinc-800 bg-white"
+        loading="lazy"
+        className="w-32 h-32 rounded-full shadow-lg mb-6 border-4 border-zinc-200 dark:border-zinc-700 bg-white"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

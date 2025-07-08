@@ -34,6 +34,7 @@ export default function FunSection() {
           <img
             src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif"
             alt="Fun GIF"
+            loading="lazy"
             className="w-32 h-32 rounded shadow border border-zinc-200 dark:border-zinc-700 object-cover"
           />
         </div>

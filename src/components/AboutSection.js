@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="mb-16">
       <motion.h2
-        className="font-mono text-xl md:text-2xl font-bold mb-4 text-zinc-800 dark:text-zinc-100"
+        className="font-mono text-xl md:text-2xl font-bold mb-4 text-zinc-800 dark:text-white"
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -27,7 +27,7 @@ export default function AboutSection() {
       </motion.div>
 
       <motion.h2
-        className="font-mono text-xl md:text-2xl font-bold mb-4 text-zinc-800 dark:text-zinc-100"
+        className="font-mono text-xl md:text-2xl font-bold mb-4 text-zinc-800 dark:text-white"
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -51,7 +51,7 @@ export default function AboutSection() {
       </motion.div>
 
       <motion.h2
-        className="font-mono text-xl md:text-2xl font-bold mb-4 text-zinc-800 dark:text-zinc-100"
+        className="font-mono text-xl md:text-2xl font-bold mb-4 text-zinc-800 dark:text-white"
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}

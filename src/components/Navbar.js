@@ -3,11 +3,16 @@ import React from "react";
 const sections = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "college", label: "College" },
   { id: "coding", label: "Coding" },
   { id: "skills", label: "Skills" },
-  { id: "fun", label: "Fun" },
   { id: "contact", label: "Contact" },
+];
+
+const socials = [
+  { href: "https://x.com/dev_gauravm", label: "Twitter", icon: "🐦" },
+  { href: "https://www.instagram.com/gaurav.nm", label: "Instagram", icon: "📸" },
+  { href: "https://youtube.com/@ggauravnm", label: "YouTube", icon: "▶️" },
+  { href: "https://leetcode.com/u/gauravnm/", label: "LeetCode", icon: "💡" },
 ];
 
 export default function Navbar({ darkMode, setDarkMode }) {
@@ -23,6 +28,18 @@ export default function Navbar({ darkMode, setDarkMode }) {
               className="font-mono text-sm hover:underline underline-offset-4 transition-colors"
             >
               {s.label}
+            </a>
+          ))}
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={s.label}
+              className="text-lg ml-1 hover:scale-110 transition-transform"
+            >
+              <span>{s.icon}</span>
             </a>
           ))}
           <button
